@@ -59,7 +59,7 @@ const PasswordReset = () => {
                             <input type="email" value={email} onChange={setVal} name="email" id="email" placeholder='Enter Your Email Address' />
                         </div>
 
-                        <button className='btn' onClick={sendLink}>Send</button>
+                        <button className='btn' onClick={sendLink}><a href={email}>Send</a></button>
                     </form>
                     <ToastContainer />
                 </div>

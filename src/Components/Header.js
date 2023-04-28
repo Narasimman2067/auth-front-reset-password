@@ -42,7 +42,7 @@ const Header = () => {
             console.log("use logout");
             localStorage.removeItem("usersdatatoken");
             setLoginData(false)
-            history("/");
+            history("/login");
         } else {
             console.log("error");
         }
@@ -89,7 +89,7 @@ const Header = () => {
                                     <MenuItem onClick={() => {
                                         logoutuser()
                                         handleClose()
-                                    }}>Logout</MenuItem>
+                                    }}><a style={{textDecoration:"none",color:"black"}} href='/'>Logout</a></MenuItem>
                                 </>
                             ) : (
                                 <>
