@@ -52,7 +52,7 @@ const Login = () => {
             console.log("user login succesfully done");
 
 
-            const data = await fetch("http://localhost:8010/login",{
+            const data = await fetch("https://auth-reset-backend.vercel.app/login",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
